@@ -1,0 +1,74 @@
+server:
+  port: 8080 # ??????
+spark:
+  app-id: #你的appid
+  api-key: #你的apikey
+  api-secret: # 你的apisecret
+  host-url:  "wss://spark-api.xf-yun.com/v4.0/chat"
+debug: true
+spring:
+
+
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 1000MB
+      max-request-size: 1000MB
+
+
+  datasource:
+     url: jdbc:mysql://127.0.0.1:3306/interview_agent_db?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+      # 你的MySQL用户名
+     username: root
+    # 你的MySQL密码
+     password: root
+      # MySQL 8+ 的驱动类名
+     driver-class-name: com.mysql.cj.jdbc.Driver
+
+       # 【核心修改】指定数据源类型为HikariCP，与自动配置报告匹配
+     type: com.zaxxer.hikari.HikariDataSource
+       # HikariCP 连接池配置
+     hikari:
+         auto-commit: false
+         connection-timeout: 30000 # 连接超时时间30秒
+         maximum-pool-size: 10      # 最大连接数
+         minimum-idle: 5          # 最小空闲连接数
+
+  jpa:
+      open-in-view: false
+      hibernate:
+
+       ddl-auto: update
+
+      database-platform: org.hibernate.dialect.MySQLDialect
+
+      show-sql: true
+      properties:
+       hibernate:
+          format_sql: 0 # 格式化打印的SQL
+
+file:
+  upload-dir: D:/interview-agent/uploads
+  access-url-prefix: /uploads
+
+
+asr:
+  host-url: "wss://iat.xf-yun.com/v1" # 实时语音转写(听写)的地址
+  app-id:  # 你的appid
+  api-key: # 你的的apikey
+  api-secret: # 你的apisecret
+
+app:
+  jwt:
+
+    secret: aF8!s#dGk@lPq$wE*rT(yU6)iO2-zX3.cVbN7m
+
+    expiration-ms: 86400000
+
+judge0:
+  api:
+    url: # 你的API的url
+    rapid-api-key: #你的API的key
+    rapid-api-host: #你的API的host
+

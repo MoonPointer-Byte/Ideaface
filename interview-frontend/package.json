@@ -1,0 +1,43 @@
+{
+  "name": "interview-frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "axios": "^1.10.0",
+    "dompurify": "^3.2.6",
+    "echarts": "^5.6.0",
+    "element-plus": "^2.10.4",
+    "face-api.js": "^0.22.2",
+    "github-markdown-css": "^5.8.1",
+    "highlight.js": "^11.11.1",
+    "marked": "^16.1.2",
+    "monaco-editor": "^0.52.2",
+    "pinia": "^3.0.3",
+    "siriwave": "^2.4.0",
+    "three": "^0.178.0",
+    "vditor": "^3.11.1",
+    "vue": "^3.5.17",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@types/marked": "^6.0.0",
+    "@types/node": "^24.0.14",
+    "@types/three": "^0.178.1",
+    "@vitejs/plugin-vue": "^6.0.0",
+    "@vue/tsconfig": "^0.7.0",
+    "monaco-editor-webpack-plugin": "^7.1.0",
+    "typescript": "~5.8.3",
+    "unplugin-auto-import": "^19.3.0",
+    "unplugin-vue-components": "^28.8.0",
+    "vite": "^7.0.4",
+    "vite-plugin-monaco-editor": "^1.1.0",
+    "vue-tsc": "^2.2.12"
+  }
+}

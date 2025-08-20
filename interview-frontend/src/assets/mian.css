@@ -1,0 +1,62 @@
+@import 'element-plus/dist/index.css';
+
+:root {
+  --el-color-primary: #4a90e2; 
+  --el-color-primary-light-3: #77b5fe;
+  --el-color-primary-light-5: #a0cfff;
+  --el-color-primary-light-7: #caddff;
+  --el-color-primary-light-8: #d9e8ff;
+  --el-color-primary-light-9: #ecf5ff;
+  
+  --app-bg-color: #f7f8fc;
+  --app-card-bg-color: #ffffff;
+  --app-text-color: #303133;
+  --app-secondary-text-color: #606266;
+  --app-border-color: #ebeef5;
+}
+
+body, html, #app {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: var(--app-bg-color);
+  color: var(--app-text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.page-container {
+  padding: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 40px 0 20px 0;
+  padding-left: 12px;
+  border-left: 4px solid var(--el-color-primary);
+  color: var(--app-text-color);
+}
+
+.el-card {
+  border: none;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important;
+}
+
+
+.el-button--primary {
+  --el-button-hover-bg-color: var(--el-color-primary-light-3);
+  --el-button-active-bg-color: var(--el-color-primary);
+}
